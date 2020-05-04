@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cafe.css">
+    <title>Cafe App</title>
+</head>
+
+<body>
+    <div id="container" class="container">
+        <!-- <div id="post-container" class="post-container">
+            <div id="number" class="number">1</div>
+            <div id="post" class="post">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima velit
+                assumenda, possimus culpa minus dolore nam vero blanditiis architecto. Unde eaque inventore deleniti
+                illo aperiam necessitatibus ab accusamus odio a.</div>
+        </div>
+        <div id="post-container" class="post-container">
+            <div id="number" class="number">2</div>
+            <div id="post" class="post">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima velit
+                assumenda, possimus culpa minus dolore nam vero blanditiis architecto. Unde eaque inventore deleniti
+                illo aperiam necessitatibus ab accusamus odio a.</div>
+        </div> -->
+
+        <div class="header">
+            <h1>Elite</h1>
+            <nav>
+                <a>home</a>
+                <a>our menus</a>
+                <a>blog entries</a>
+                <a>contact us</a>
+            </nav>
+        </div>
+        <div id="main-cover" class="main-cover">
+            <strong>Here you can find delicious types of food</strong>
+            <h1>asian restaurant</h1>
+            <small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At optio nemo consequuntur, quidem
+                provident, nam suscipit neque non obcaecati molestias expedita iste iusto!</small>
+            <button id="order" class="order">order right now</button>
+        </div>
+        <div id="food-types" class="food-types">
+            <div class="place-order">
+                <img src="image/meal1.jpg" />
+                <div id="order-box" class="order-box">
+                    <h3>We cook delicious</h3>
+                    <div class="tel-number">
+                        <small>You can call us on</small>
+                        <strong>+1234 567 9010</strong>
+                    </div>
+                    <small>or</small>
+                    <button id="make-order" class="make-order">Order now</button>
+                </div>
+                <img src="image/meal2.jpg" />
+            </div>
+            <div class="types">
+                <div class="image-wrapper"><img src="./image/breakfast.jpg" alt="breakfast" /><small>Breakfast</small>
+                </div>
+                <div class="image-wrapper"><img src="./image/lunch.jpg" alt="lunch" /><small>Lunch</small></div>
+                <div class="image-wrapper"><img src="./image/dinner.jpg" alt="dinner" /><small>Dinner</small></div>
+                <div class="image-wrapper"><img src="./image/dessert.jpg" alt="dessert" /><small>Desserts</small></div>
+            </div>
+        </div>
+
+        <div id="booking-section" class="booking-section">
+            <h4>Book your table now</h4>
+            <div id="form-container" class="form-container">
+                <img src="./image/handkerchief.jpg" alt="hankerchief">
+                <form id="form" class="form">
+
+                    <div class="form-control">
+                        <select id="select-day">
+                            <option value="Sunday">Sunday</option>
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <select id="select-hour">
+                            <option value="10">10.00</option>
+                            <option value="11">11.00</option>
+                            <option value="12">12.00</option>
+                            <option value="13">13.00</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <input id="name" type="text" placeholder="Full Name">
+                    </div>
+                    <div class="form-control">
+                        <input id="phone" type="text" placeholder="Phone Number">
+                    </div>
+
+                    <div class="form-control">
+                        <select id="select-number">
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">Four</option>
+                            <option value="5">Five</option>
+                        </select>
+                    </div>
+
+                    <button id="book-table" class="book-table">Book Table</button>
+
+                </form>
+            </div>
+
+            <div class="booking-footer" id="booking-footer">
+                <h4>get application for your phone</h4>
+                <button>Download now</button>
+            </div>
+        </div>
+        <div id="receipt-container" class="receipt-container">
+        </div>
+
+        <div id="featured" class="featured">
+            <h3>Weekly featured food</h3>
+            <div id="meals-wrapper" class="meals-wrapper">
+            </div>
+        </div>
+
+        <div class="countdown-container">
+
+            <div id="year" class="year"></div>
+
+            <h1>Next Offer Countdown</h1>
+
+            <div id="countdown" class="countdown">
+                <div class="time">
+                    <h2 id="days">00</h2>
+                    <small>days</small>
+                </div>
+                <div class="time">
+                    <h2 id="hours">00</h2>
+                    <small>hours</small>
+                </div>
+                <div class="time">
+                    <h2 id="minutes">00</h2>
+                    <small>minutes</small>
+                </div>
+                <div class="time">
+                    <h2 id="seconds">00</h2>
+                    <small>seconds</small>
+                </div>
+            </div>
+
+            <img src="./image/spinner.gif" alt="Loading..." id="loading" class="loading">
+        </div>
+    </div>
+    <script src="cafe.js"></script>
+</body>
+
+</html>
