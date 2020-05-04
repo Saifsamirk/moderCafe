@@ -452,7 +452,7 @@ button:active{
     height: 300px;
     position: relative;
     z-index: 1;
-    /* color: white; */
+    color: #F2F6FF;
 }
 
 .countdown-container::after{
